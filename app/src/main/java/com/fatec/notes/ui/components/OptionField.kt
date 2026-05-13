@@ -90,3 +90,33 @@ private fun PreviewOptionFieldValid() {
         )
     }
 }
+
+@Preview(showBackground = true)
+@Composable
+private fun PreviewOptionFieldError() {
+    MaterialTheme {
+        OptionField(
+            index = 1,
+            value = "",
+            error = "Alternativa não pode estar vazia",
+            onChange = {},
+            onRemove = {},
+            canRemove = true
+        )
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+private fun PreviewOptionFieldNoRemove() {
+    MaterialTheme {
+        OptionField(
+            index = 0,
+            value = "Java",
+            error = null,
+            onChange = {},
+            onRemove = {},
+            canRemove = false
+        )
+    }
+}
