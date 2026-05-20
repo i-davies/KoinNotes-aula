@@ -9,6 +9,7 @@ import org.koin.core.module.dsl.viewModel
 import org.koin.dsl.bind
 import org.koin.dsl.module
 import com.fatec.notes.viewmodel.NoteViewModel
+import com.fatec.notes.viewmodel.QuestionFormViewModel
 import org.koin.core.module.dsl.viewModelOf
 
 /**
