@@ -30,7 +30,10 @@ import com.fatec.notes.viewmodel.NoteViewModel
 import org.koin.compose.viewmodel.koinViewModel
 
 @Composable
-fun NoteScreen (viewModel: NoteViewModel = koinViewModel()) {
+fun NoteScreen (
+    onBack: () -> Unit = {},
+    viewModel: NoteViewModel = koinViewModel()
+) {
     val state by viewModel.uiState.collectAsState()
 
     MaterialTheme {

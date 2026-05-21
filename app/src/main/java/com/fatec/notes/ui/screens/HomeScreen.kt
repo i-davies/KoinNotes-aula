@@ -74,7 +74,7 @@ fun HomeScreen(
                     icon = Icons.Default.Quiz,
                     title = "Cadastrar Questões",
                     subtitle = "Formulários + Validação",
-                    onClick = onNavigateToNotes
+                    onClick = onNavigateToQuestions
                 )
 
             }
